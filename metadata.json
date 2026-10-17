@@ -1,0 +1,6 @@
+{
+  "name": "Суши Роллы — Онлайн-доставка и суши кафе",
+  "description": "Минималистичное японское суши-кафе с онлайн-заказом, отслеживанием курьера на карте в реальном времени, программой лояльности, чатом с курьером, мультиязычностью и темной темой.",
+  "requestFramePermissions": ["geolocation", "notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

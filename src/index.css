@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Noto Serif JP', serif;
+    --font-display: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --color-bg-dark: #0a0a0a;
+    --color-surface-dark: #121212;
+    --color-border-dark: #222222;
+    --color-accent-red: #d12f2f;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  /* Custom subtle scrollbars for Clean Minimalism */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(140, 140, 140, 0.2);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(140, 140, 140, 0.4);
+  }
+}
+
+.font-japanese-serif {
+  font-family: 'Noto Serif JP', serif;
+}
+
+.font-display-zen {
+  font-family: 'Cinzel', serif;
+}
+
+/* Clean Minimalism Japanese subtle dot grid patterns */
+.bg-japanese-pattern-light {
+  background-color: #fafafa;
+  background-image: radial-gradient(#e5e5e5 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-japanese-pattern-dark {
+  background-color: #0a0a0a;
+  background-image: radial-gradient(#1c1c1c 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Radar pulse animation for live courier map */
+@keyframes radar-ping {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+.animate-radar {
+  animation: radar-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Shimmer animation for sushi preparation stage */
+@keyframes shimmer-sweep {
+  100% {
+    transform: translateX(100%);
+  }
+}
